@@ -1,8 +1,11 @@
+// [REQUIRE] //
 const mongoose = require('mongoose');
 const mongooseFuzzySearch = require('mongoose-fuzzy-search');
 
+// [INIT] //
 const defaultImage = 'https://fonts.google.com/icons?selected=Material%20Icons%3Aaccount_circle%3A'
 
+//Define user fields, type-checks and size validation for each //
 module.exports = mongoose.model(
     'User',
     mongoose.Schema({
