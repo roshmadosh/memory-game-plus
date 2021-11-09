@@ -7,7 +7,7 @@ const defaultImage = 'https://fonts.google.com/icons?selected=Material%20Icons%3
 
 //Define user fields, type-checks and size validation for each //
 module.exports = mongoose.model(
-    'User',
+    'Users',
     mongoose.Schema({
         _id: mongoose.Schema.Types.ObjectId,
         email: {

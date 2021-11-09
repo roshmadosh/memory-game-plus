@@ -64,7 +64,7 @@ module.exports = {
 				}
 			}
             // Check availability username //
-            if(await UserModel.findOne( { username })) {
+            if(await UserModel.findOne( { username } )) {
                 return {
                     executed: true,
                     status: true,
@@ -98,7 +98,8 @@ module.exports = {
                 created: true,
                 user: user
             }
-        } catch (err) {
+        } // For catching all unhandled exceptions // 
+        catch (err) {
             return {
                 execution: false,
                 status: false,
